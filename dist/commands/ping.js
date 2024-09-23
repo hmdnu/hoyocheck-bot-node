@@ -6,6 +6,6 @@ export class Ping extends CommandStruct {
         if (!interaction.isChatInputCommand()) {
             return;
         }
-        await interaction.reply(`ok gas mantap`);
+        await interaction.reply({ content: `ok gas mantap`, ephemeral: true });
     }
 }
